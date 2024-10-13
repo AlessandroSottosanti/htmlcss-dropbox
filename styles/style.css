@@ -134,6 +134,7 @@ header {
     position: relative;
     width: 100%;
     display: flex;
+
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -165,6 +166,11 @@ p {
 #banner {
     justify-content: flex-start;
     width: 80%;
+}
+
+#faq {
+    justify-content: flex-start;
+    width: 60%;
 }
 
 .text {
@@ -527,16 +533,14 @@ footer {
 .container-footer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    height: 100vh;
-    gap: 0;
 }
 
 .column {
     display: flex;
+    flex-wrap: wrap;
     overflow: auto;
     flex: 1 1 calc(33.33% - 20px);
     box-sizing: border-box;
-    margin: 10px 0;
     aspect-ratio: 1 / 1;
 }
 
@@ -584,21 +588,25 @@ footer {
     margin: 30px 0;
 }
 
+.fap {
+
+}
+
 .free-try {
     display: flex;
+    justify-content: center;
     align-items: flex-start;
     padding-top: 40px;
     border-top: 1px solid white;
     width: 100%;
-
+    text-align:center;
 
     /* debug */
-    height: 20px;
-    background-color: gray;
-
     border: 1px dashed black;
     border: 1px dashed white;
 }
+
+
 
 .footer-inner-container {
     width: 100%;
